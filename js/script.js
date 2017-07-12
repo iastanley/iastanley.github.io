@@ -1,6 +1,11 @@
 $(document).ready(function(){
-  // add scroll spy to navbar links
-  $('body').scrollspy({target: '.navbar', offset: 50});
+  //hamburger menu toggle
+  $('.hamburger-menu').on('click', function(event){
+    event.preventDefault();
+    // $('.nav-right').toggleClass('nav-open');
+    $('.nav-right').slideToggle('slow');
+  });
+
 
   // add smooth scroll to brand and navbar links
   // offset corrects scroll position for fixed nav

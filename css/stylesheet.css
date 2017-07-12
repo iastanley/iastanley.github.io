@@ -100,11 +100,8 @@ a.brand {
 
 .nav-right {
   display: none;
-  float: right;
-  height: 50px;
+  overflow: hidden;
 }
-
-
 
 .nav-right ul {
   list-style: none;
@@ -122,12 +119,12 @@ a.brand {
   letter-spacing: 1px;
 }
 
-.nav-open {
+/*.nav-open {
   float: none;
   display: block;
   background: #222;
   width: 100vw;
-  height: auto;
+  height: 172px;
   margin-left: -15px;
   margin-right: -15px;
   padding: 10px 0;
@@ -143,7 +140,7 @@ a.brand {
   width: 100%;
   margin-left: 0;
   padding: 10px 15px;
-}
+}*/
 
 .portfolio-screenshot {
   display: block;
@@ -236,6 +233,35 @@ a.brand {
   text-align: center;
 }
 
+#contact-section {
+  height: 300px;
+  text-align: center;
+}
+
+/* mobile only styles */
+@media (max-width: 767px) {
+  .nav-right {
+    background: #222;
+    width: 100vw;
+    height: 172px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav-right ul {
+    margin: 0;
+  }
+
+  .nav-right li {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 15px;
+  }
+}
+
 /* tablet size and up styles*/
 @media (min-width: 768px) {
   h1 {
@@ -261,7 +287,14 @@ a.brand {
   }
 
   .nav-right {
-    display: block;
+    display: block !important;
+    float: right;
+    height: 50px;
+  }
+
+  .nav-right li {
+    display: inline-block;
+    margin-left: 10px;
   }
 
   #title-section {
@@ -273,18 +306,13 @@ a.brand {
     width: 90%;
     text-align: center;
   }
-
-  #contact-section {
-    height: 300px;
-    text-align: center;
-  }
 }
 
 /* desktop size and up styles */
 @media (min-width: 992px) {
   .portfolio-description {
     position: relative;
-    height: 350px;
+    min-height: 375px;
   }
 
   .portfolio-description h3 {
