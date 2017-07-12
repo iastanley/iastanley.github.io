@@ -77,6 +77,10 @@ a.brand {
   padding: 15px 0;
 }
 
+a.brand:hover {
+  color: #59f8e8;
+}
+
 .hamburger-menu {
   position: relative;
   float: right;
@@ -117,6 +121,10 @@ a.brand {
   color: #aaa;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+.nav-right a:hover {
+  color: #59f8e8;
 }
 
 /*.nav-open {

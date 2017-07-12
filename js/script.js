@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   // add smooth scroll to brand and navbar links
   // offset corrects scroll position for fixed nav
-  $('.navbar a').on('click', function(event){
+  $('nav a').on('click', function(event){
     if(this.hash) {
       event.preventDefault();
       smoothScroll(this.hash, 50);
