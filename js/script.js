@@ -11,7 +11,7 @@ $(document).ready(function(){
   $('nav a').on('click', function(event){
     if(this.hash) {
       event.preventDefault();
-      smoothScroll(this.hash, 50);
+      smoothScroll(this.hash, 49); //49 instead of 50 fixes scroll spy bug
       $('.nav-right').slideUp('fast');
     }
   });
@@ -52,7 +52,6 @@ function nextSectionReached(index, elementList, navOffset) {
   var element = elementList[index];
   // required to get max $(window).scrollTop value - for bottom of page
   var scrollBottom = $(document).height() - $(window).height();
-
   if ($(element).offset().top - ($(window).scrollTop() + navOffset) <= 0) {
     return true;
   } else if ($(window).scrollTop() >= scrollBottom){
