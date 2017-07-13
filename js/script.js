@@ -12,6 +12,7 @@ $(document).ready(function(){
     if(this.hash) {
       event.preventDefault();
       smoothScroll(this.hash, 50);
+      $('.nav-right').slideUp('fast');
     }
   });
 
