@@ -127,6 +127,11 @@ a.brand:hover {
   color: #59f8e8;
 }
 
+/* class for scroll spy */
+a.active {
+  color: #59f8e8;
+}
+
 /*.nav-open {
   float: none;
   display: block;
@@ -212,6 +217,8 @@ a.brand:hover {
   color: grey;
 }
 
+
+
 #title-section {
   height: 100vh;
   text-align: center;
@@ -242,7 +249,7 @@ a.brand:hover {
 }
 
 #contact-section {
-  height: 300px;
+  min-height: 300px;
   text-align: center;
 }
 
@@ -279,6 +286,8 @@ a.brand:hover {
   h3 {
     font-size: 24px;
   }
+
+
 
   .row {
     padding: 1% 5%;
