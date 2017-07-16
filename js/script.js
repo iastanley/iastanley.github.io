@@ -2,7 +2,6 @@ $(document).ready(function(){
   //hamburger menu toggle
   $('.hamburger-menu').on('click', function(event){
     event.preventDefault();
-    // $('.nav-right').toggleClass('nav-open');
     $('.nav-right').slideToggle('slow');
   });
 
