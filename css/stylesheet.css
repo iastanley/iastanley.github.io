@@ -42,10 +42,6 @@ nav {
   width: 100%;
 }
 
-nav .row {
-  height: 100%;
-}
-
 footer {
   background: #222;
   color: #fff;
@@ -82,7 +78,6 @@ a.brand:hover {
 }
 
 .hamburger-menu {
-  position: relative;
   float: right;
   border: none;
   background: none;
@@ -131,29 +126,6 @@ a.brand:hover {
 a.active {
   color: #59f8e8;
 }
-
-/*.nav-open {
-  float: none;
-  display: block;
-  background: #222;
-  width: 100vw;
-  height: 172px;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.nav-open ul {
-  margin: 0;
-}
-
-.nav-open li {
-  display: block;
-  width: 100%;
-  margin-left: 0;
-  padding: 10px 15px;
-}*/
 
 .portfolio-screenshot {
   display: block;
@@ -260,7 +232,6 @@ a.active {
   .nav-right {
     background: #222;
     width: 100vw;
-    height: 172px;
     margin-left: -15px;
     margin-right: -15px;
     padding: 10px 0;
