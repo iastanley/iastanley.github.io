@@ -73,6 +73,7 @@ function prevSectionReached(index, elementList, navOffset) {
     return false;
   }
 }
+
 // adding active class to navbar links when scrolling
 function addActiveTo(index, elementList) {
   // remove active class from all links
