@@ -1,6 +1,7 @@
 body {
   background: #222;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: #fff;
 }
@@ -166,7 +167,7 @@ a.active {
   border: 1px solid #59f8e8;
   color: #000;
   font-weight: 700;
-  width: 6rem;
+  width: 6.5rem;
   padding: 5px;
   margin: 0 2px;
   border-radius: 18px;
@@ -199,6 +200,10 @@ a.active {
   height: 50vh;
   text-align: center;
   padding-top: 20%;
+}
+
+#title-section h3 {
+  font-weight: 300;
 }
 
 #about-section {
